@@ -3,7 +3,7 @@ Summary:	PAM module - authenticate on htpasswd-type files separate from /etc/pas
 Summary(pl):	Modu³ PAM pozwalaj±cy na u¿ycie oddzielnych plików z has³ami do ró¿nych us³ug
 Name:		pam-%{modulename}
 Version:	0.99
-Release:	1
+Release:	2
 Epoch:		0
 License:	GPL
 Group:		Base/Authentication and Authorization
