@@ -1,15 +1,17 @@
+%define 	modulename pam_pwdfile
 Summary:	PAM module - authenticate on htpasswd-type files separate from /etc/passwd
 Summary(pl):	Modu³ PAM - pozwala na u¿ycie oddzielnych plików z has³ami do ró¿nych us³ug
-Name:		pam-pam_pwdfile
+Name:		pam-%{modulename}
 Version:	0.98
 Release:	2
 Epoch:		0
 License:	GPL
 Group:		Networking
-Source0:	http://cpbotha.net/files/pam_pwdfile/pam_pwdfile-%{version}.tar.gz
+Source0:	http://cpbotha.net/files/pam_pwdfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	a60690e288c1c827f6a6040ea38938f1
 URL:		http://cpbotha.net/pam_pwdfile.html
 BuildRequires:	pam-static > 0.77.3-2
+Obsoletes:	%{modulename}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,7 +23,7 @@ Modu³ PAM - pozwala na u¿ycie oddzielnych plików z has³ami do ró¿nych
 us³ug.
 
 %prep
-%setup -q -n pam_pwdfile-%{version}
+%setup -q -n ${modulename}-%{version}
 
 %build
 %{__make} -f contrib/Makefile.standalone \
