@@ -6,7 +6,7 @@ Version:	0.99
 Release:	1
 Epoch:		0
 License:	GPL
-Group:		Networking
+Group:		Base/Authentication and Authorization
 Source0:	http://cpbotha.net/files/pam_pwdfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	a05b41f0bd1c0de16bec8aad6b1b30a9
 URL:		http://cpbotha.net/pam_pwdfile.html
