@@ -1,6 +1,6 @@
 %define 	modulename pam_pwdfile
 Summary:	PAM module - authenticate on htpasswd-type files separate from /etc/passwd
-Summary(pl.UTF-8):   Moduł PAM pozwalający na użycie oddzielnych plików z hasłami do różnych usług
+Summary(pl.UTF-8):	Moduł PAM pozwalający na użycie oddzielnych plików z hasłami do różnych usług
 Name:		pam-%{modulename}
 Version:	0.99
 Release:	2
