@@ -28,7 +28,7 @@ różnych usług.
 %build
 %{__make} -f contrib/Makefile.standalone \
 	CC="%{__cc}" \
-	PAMLIB="-lpam -lpamcrypt" \
+	PAMLIB="-lpam" \
 	CFLAGS="%{rpmcflags} -fPIC -c -Wall -Wformat-security"
 
 %install
